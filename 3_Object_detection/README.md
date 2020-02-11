@@ -11,6 +11,6 @@ https://blog.paperspace.com/how-to-implement-a-yolo-object-detector-in-pytorch/
 
 Download and put in Yolo directory : [yolov3.weights](https://pjreddie.com/media/files/yolov3.weights) 
 
-Run (camera):
+Run (usb camera):
 
 `python cam_demo.py`
