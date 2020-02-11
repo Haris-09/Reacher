@@ -1,11 +1,24 @@
 # Reacher - Robotic Arm
- 
-https://github.com/poppy-project/poppy-ergo-jr
-
-https://www.francerobotique.com/dynamixel-x/297-dynamixel-xl-320-art0297-robotispoids-167g-dimensions-24-x-36-x-27-mm-rapport-de-reduction-238-1-tension-dalimentation-6-84v-vit.html (in french, sorry!)
+  
+## Material :
 
 ![](https://github.com/OldM0nk3y/Reacher/blob/master/utils/dyn.jpg)
 
-Cheaper than printed parts! : https://www.generationrobots.com/en/248-robotis-dream
+### Prices ($) from Robotis
+
+* 320 XL Dynamixel (motor): 21.90 x 2 (x 3) = 43.80 (65.70)  
+* Plate : 0.90  
+* Hinge : 1.20  
+* Rivet : 5.50  
+* Ollo tool : 0.90  
+
+**Controller :**
+* Opencm9.04-c : 19.90
+* Pixl : 33.23 (Roboshop - France)
+  
+Power supply (depending on the controller)  
+    
 
 ![](https://github.com/OldM0nk3y/Reacher/blob/master/utils/arm.jpg)
+
+https://github.com/poppy-project/poppy-ergo-jr
