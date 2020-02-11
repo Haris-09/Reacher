@@ -44,8 +44,12 @@ def write(x, img):
     c1 = tuple(x[1:3].int())
     c2 = tuple(x[3:5].int())
     cls = int(x[-1])
-    label = str(c1[0])+"{0}".format(classes[cls])
+    label = "{0}".format(classes[cls])
     color = random.choice(colors)
+    cx=(c1[0]+c2[0])/2
+    cy=(c1[1]+c2[1])/2
+    center=(cx,cy)
+    cv2.circle(img, center, 4,color, 1)
     cv2.rectangle(img, c1, c2,color, 1)
     t_size = cv2.getTextSize(label, cv2.FONT_HERSHEY_PLAIN, 1 , 1)[0]
     c2 = c1[0] + t_size[0] + 3, c1[1] + t_size[1] + 4
@@ -130,6 +134,7 @@ if __name__ == '__main__':
             if type(output) == int:
                 frames += 1
                 print("FPS of the video is {:5.2f}".format( frames / (time.time() - start)))
+                print("int")
                 cv2.imshow("frame", orig_im)
                 key = cv2.waitKey(1)
                 if key & 0xFF == ord('q'):
@@ -144,7 +149,10 @@ if __name__ == '__main__':
             output[:,[1,3]] *= frame.shape[1]
             output[:,[2,4]] *= frame.shape[0]
 
-            
+            centx=(output[:,[1]]+output[:,[3]])/2
+            centy=(output[:,[2]]+output[:,[4]])/2
+            cent=(centx[0][0],centy[0][0])
+						
             classes = load_classes('data/coco.names')
             colors = pkl.load(open("pallete", "rb"))
             
@@ -157,7 +165,7 @@ if __name__ == '__main__':
                 break
             frames += 1
             print("FPS of the video is {:5.2f}".format( frames / (time.time() - start)))
-
+            print("Center coordinates :", cent[0].data.cpu().numpy()," ", cent[1].data.cpu().numpy())
             
         else:
             break
