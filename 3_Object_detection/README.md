@@ -1,10 +1,13 @@
 # Reacher - Object Detection
  
-Simple object detection using e.g. COCO dataset.
+Simple object detection using COCO dataset.
 
-* Yolo/tinyYolo  
+* Yolo
 
+Code from:
 https://github.com/ayooshkathuria/pytorch-yolo-v3  
-https://blog.paperspace.com/how-to-implement-a-yolo-object-detector-in-pytorch/
+https://blog.paperspace.com/how-to-implement-a-yolo-object-detector-in-pytorch/  
 
-* Mobilenet SSD
+Download and put in Yolo directory : [yolov3.weights](https://pjreddie.com/media/files/yolov3.weights) 
+
+'python cam_demo.py'
