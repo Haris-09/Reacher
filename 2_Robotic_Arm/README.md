@@ -6,6 +6,6 @@ https://www.francerobotique.com/dynamixel-x/297-dynamixel-xl-320-art0297-robotis
 
 ![](https://github.com/OldM0nk3y/Reacher/blob/master/utils/dyn.jpg)
 
-Less expensive than printed parts! : https://www.generationrobots.com/en/248-robotis-dream
+Cheaper than printed parts! : https://www.generationrobots.com/en/248-robotis-dream
 
 ![](https://github.com/OldM0nk3y/Reacher/blob/master/utils/arm.jpg)
