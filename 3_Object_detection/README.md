@@ -4,7 +4,8 @@ Simple object detection using COCO dataset.
 
 * Yolo
 
-Code from:
+Code from:  
+
 https://github.com/ayooshkathuria/pytorch-yolo-v3  
 https://blog.paperspace.com/how-to-implement-a-yolo-object-detector-in-pytorch/  
 
