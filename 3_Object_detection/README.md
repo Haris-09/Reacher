@@ -15,7 +15,7 @@ Run (usb camera):
 
 `python cam_demo.py`
 
-**Added : **
+**Added :**
 
 * Circle in the center of bbox
 * Center coordinates printed in terminal (with FPS)
