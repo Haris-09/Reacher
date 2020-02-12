@@ -14,3 +14,8 @@ Download and put in Yolo directory : [yolov3.weights](https://pjreddie.com/media
 Run (usb camera):
 
 `python cam_demo.py`
+
+### Added :
+
+* Circle in the center of bbox
+* Center coordinates printed in terminal (with FPS)
