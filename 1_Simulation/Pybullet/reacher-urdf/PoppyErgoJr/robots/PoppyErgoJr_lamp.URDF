@@ -1,0 +1,361 @@
+<robot
+  name="PoppyErgoJr_lamp">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.00273845833301658 0.00821639745724031 -0.03389771220629"
+        rpy="0 0 0" />
+      <mass
+        value="0.080241089542348" />
+      <inertia
+        ixx="0.000114301948063037"
+        ixy="-1.74777682977275E-06"
+        ixz="7.80638590037742E-06"
+        iyy="0.000177560979735186"
+        iyz="6.80763560469812E-06"
+        izz="7.51325469990316E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PoppyErgoJr_lamp/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PoppyErgoJr_lamp/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="long_U">
+    <inertial>
+      <origin
+        xyz="-0.00243058056226709 1.14505937432685E-07 0.0129312523306501"
+        rpy="0 0 0" />
+      <mass
+        value="0.0042118228619085" />
+      <inertia
+        ixx="5.78707668456099E-07"
+        ixy="9.44283869980695E-12"
+        ixz="-1.13587476220175E-07"
+        iyy="1.25420346852677E-06"
+        iyz="4.64830147260071E-12"
+        izz="9.27174545760678E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PoppyErgoJr_lamp/meshes/long_U.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PoppyErgoJr_lamp/meshes/long_U.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="m1"
+    type="continuous">
+    <origin
+      xyz="0 0 0.0327993216120967"
+      rpy="-6.12303176911189E-17 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="long_U" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+  <link
+    name="section_1">
+    <inertial>
+      <origin
+        xyz="-0.000168296047337678 0.0134412831426779 -3.3641018831963E-09"
+        rpy="0 0 0" />
+      <mass
+        value="0.0201321844066143" />
+      <inertia
+        ixx="6.51960684491039E-06"
+        ixy="-5.35361387413227E-07"
+        ixz="-5.67167085932496E-13"
+        iyy="2.3720668608647E-06"
+        iyz="-1.07202402970318E-12"
+        izz="7.46616268702641E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PoppyErgoJr_lamp/meshes/section_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PoppyErgoJr_lamp/meshes/section_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="m2"
+    type="continuous">
+    <origin
+      xyz="0 0 0.0240006783879033"
+      rpy="1.5707963267949 0 0" />
+    <parent
+      link="long_U" />
+    <child
+      link="section_1" />
+    <axis
+      xyz="-1 0 0" />
+  </joint>
+  <link
+    name="section_2">
+    <inertial>
+      <origin
+        xyz="0.000407772974186085 0.0084091491941567 -1.07672203215578E-09"
+        rpy="0 0 0" />
+      <mass
+        value="0.0178217251516966" />
+      <inertia
+        ixx="2.5230448864375E-06"
+        ixy="-6.63873566658367E-08"
+        ixz="-2.02107689675087E-13"
+        iyy="1.6417712841432E-06"
+        iyz="3.4691950899966E-13"
+        izz="2.86561030340007E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PoppyErgoJr_lamp/meshes/section_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PoppyErgoJr_lamp/meshes/section_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="m3"
+    type="continuous">
+    <origin
+      xyz="0 0.054 0"
+      rpy="0 0 0" />
+    <parent
+      link="section_1" />
+    <child
+      link="section_2" />
+    <axis
+      xyz="-1 0 0" />
+  </joint>
+  <link
+    name="section_3">
+    <inertial>
+      <origin
+        xyz="-0.00052926997774457 -0.0148172531686622 -0.012354599443708"
+        rpy="0 0 0" />
+      <mass
+        value="0.0201321844066143" />
+      <inertia
+        ixx="5.58716321477779E-06"
+        ixy="3.84615911019802E-09"
+        ixz="3.80051502924433E-07"
+        iyy="6.00831891375737E-06"
+        iyz="9.50610838818009E-08"
+        izz="2.36437426368361E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PoppyErgoJr_lamp/meshes/section_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PoppyErgoJr_lamp/meshes/section_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="m4"
+    type="continuous">
+    <origin
+      xyz="0 0.0298217741221248 0"
+      rpy="3.14159265358979 0 0" />
+    <parent
+      link="section_2" />
+    <child
+      link="section_3" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="section_4">
+    <inertial>
+      <origin
+        xyz="-0.000168296047337675 0.0134412831426779 -3.36410185819425E-09"
+        rpy="0 0 0" />
+      <mass
+        value="0.0201321844066143" />
+      <inertia
+        ixx="6.51960684491041E-06"
+        ixy="-5.3536138741322E-07"
+        ixz="-5.67167084142739E-13"
+        iyy="2.3720668608647E-06"
+        iyz="-1.07202403101559E-12"
+        izz="7.46616268702642E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PoppyErgoJr_lamp/meshes/section_4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PoppyErgoJr_lamp/meshes/section_4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="m5"
+    type="continuous">
+    <origin
+      xyz="0 -0.0151782258778753 -0.048"
+      rpy="-1.5707963267949 0 0" />
+    <parent
+      link="section_3" />
+    <child
+      link="section_4" />
+    <axis
+      xyz="-1 0 0" />
+  </joint>
+  <link
+    name="lamp">
+    <inertial>
+      <origin
+        xyz="1.27830632190573E-09 0.000355608252537387 -0.0146477478910929"
+        rpy="0 0 0" />
+      <mass
+        value="0.0204360587248965" />
+      <inertia
+        ixx="9.75069416196734E-06"
+        ixy="1.65042201415856E-13"
+        ixz="3.38257468196669E-13"
+        iyy="9.43415434894445E-06"
+        iyz="1.11724445686799E-07"
+        izz="4.0995738076879E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PoppyErgoJr_lamp/meshes/lamp.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PoppyErgoJr_lamp/meshes/lamp.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="m6"
+    type="continuous">
+    <origin
+      xyz="0 0.054 0"
+      rpy="1.5707963267949 1.5707963267949 0" />
+    <parent
+      link="section_4" />
+    <child
+      link="lamp" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+</robot>
